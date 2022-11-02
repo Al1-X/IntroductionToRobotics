@@ -1,10 +1,10 @@
 # Introduction To Robotics (2022 - 2023)
 This repo includes the homework for the '**Introduction to Robotics**' course, taken in the third year at the _Faculty of Mathematics and Computer Science, University of Bucharest_. Each homework comes with the appropriate details and requirements, as well with the source code, images and videos of the project.
 
-## Homework
+# Homework
 
 <details>
-<summary> Homework 1 </summary>
+<summary> <h2> Homework 1 </h2> </summary>
 
 ### Description and requirements
 
@@ -23,7 +23,7 @@ https://youtu.be/HXSdGHb5iEo
 
 
 <details>
-<summary> Homework 2 </summary>
+<summary> <h2> Homework 2 </h2> </summary>
   
 ### Description and requirements
   
