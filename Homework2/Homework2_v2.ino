@@ -60,24 +60,9 @@ void setup() {
 
 void loop() {
   originalState();
-  // currentButtonState = digitalRead(buttonPin);
-
-  // if (currentButtonState != lastButtonState) {
-  //   lastDebounceTime = millis();
-  // }
-
-  // if (millis() - lastDebounceTime > debounceInterval) {
-  //   if (currentButtonState != buttonState) {
-  //     buttonState = currentButtonState;
-  //     if (buttonState == LOW) {
   if (systemState == 2) {
         activateSemaphore();
   }
-  //     }
-  //   }
-  // }
-
-  // lastButtonState = currentButtonState;
 }
 
 void activateSemaphore () {
@@ -93,9 +78,9 @@ void activateSemaphore () {
   // SEMAPHORE STATE 2
   semaphoreState2StartTime = millis();
 
-  carsGreenLedState = !carsGreenLedState;// hl
+  carsGreenLedState = !carsGreenLedState;
   digitalWrite(carsGreenLedPin, carsGreenLedState);
-  carsYellowLedState = !carsYellowLedState;// lh
+  carsYellowLedState = !carsYellowLedState;
   digitalWrite(carsYellowLedPin, carsYellowLedState);
 
   while (millis() - semaphoreState2StartTime < semaphoreState2Duration);
@@ -107,12 +92,12 @@ void activateSemaphore () {
   semaphoreState3StartTime = millis();
 
 
-  carsYellowLedState = !carsYellowLedState; //hl
+  carsYellowLedState = !carsYellowLedState;
   digitalWrite(carsYellowLedPin, LOW);
 
-  peopleRedLedState = !peopleRedLedState;   //hl
+  peopleRedLedState = !peopleRedLedState;
   digitalWrite(peopleRedLedPin, peopleRedLedState);
-  peopleGreenLedState = !peopleGreenLedState; //lh
+  peopleGreenLedState = !peopleGreenLedState;
   digitalWrite(peopleGreenLedPin, peopleGreenLedState);
 
   while (millis() - semaphoreState3StartTime < semaphoreState3Duration) {
@@ -162,14 +147,11 @@ void buzz (const int buzzDuration) {
 
 void initiateCrosswalk() {
   if (systemState == 0) {
-    // systemState = 1;
     static unsigned long lastInterruptTime = 0;
     unsigned long interruptTime = millis();
 
     Serial.println(lastInterruptTime);
     Serial.println(interruptTime);
-
-    // if interrupts don't come within the debounce delay, assume there wasn't any noise during the button press
     if (interruptTime - lastInterruptTime > debounceInterval) {
       systemState = 2;
       lastStateEndTime = millis();
