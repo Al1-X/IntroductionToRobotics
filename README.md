@@ -96,14 +96,14 @@ https://youtu.be/PK2Td_nJlBc
     </ol>
   
   ## Setup pictures
-  <a href=""> - Top View - </a>
+  - Top View -
   ![alt-image](./Homework3/SetupImages/TopView.jpeg)
   
-  <a href=""> - Side View - </a>
+  - Side View -
   ![alt-image](./Homework3/SetupImages/SideView.jpeg)
   
   ## Functionality demo
-  <p> You can find the demo <a href="">here</a>.
+  <p> You can find the demo <a href="https://youtu.be/2iRJRtrS0ZI">here</a>.
     
   ## Source code
   <p> You can also find the source code <a href="https://github.com/AlinaGeo/IntroductionToRobotics/blob/main/Homework3/Homework3.ino">here</a>.
