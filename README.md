@@ -56,3 +56,56 @@ The goal of the second homework was to create a "traffic lights" setup for a cro
   
   Here you can find a demo:
 https://youtu.be/PK2Td_nJlBc
+    
+</details>
+  
+  
+<details>
+  <summary> <h2> Homework 3 </h2> </summary>
+
+  <h2> Task requirements </h2>
+  
+  <h3> Components </h3>
+  <ul>
+    <li> 1 7-segment display </li>
+    <li> 1 joystick </li>
+    <li> Resistors </li>
+    <li> Wires </li>
+  </ul>
+
+  <h3> Description </h3>
+  <p> The goal of the third homework was to create a setup with a 7-segment display controlled by a joystick, which can be in one of two states. </p>
+  <p> The system has the following states (as written in the laboratory material) : <p>
+    <ol>
+      <li> 
+        State 1 (default, but also initiated after a button press in State
+        2): Current position blinking. Can use the joystick to move from
+        one position to neighbors. Short pressing the button toggles state
+        2. Long pressing the button in state 1 resets the entire display by
+        turning all the segments OFF and moving the current position to the
+        decimal point (available only in state 1).
+      </li>
+      <li> 
+        State 2 (initiated after a button press in State 1): The current
+        segment stops blinking, adopting the state of the segment before
+        selection (ON or OFF). Toggling the X (or Y, you chose) axis should
+        change the segment state from ON to OFF or from OFF to ON.
+        Clicking the joystick should save the segment state and exit back to
+        state 1.
+      </li>
+    </ol>
+  
+  ## Setup pictures
+  <a href=""> - Top View - </a>
+  ![alt-image](./Homework3/SetupImages/TopView.jpeg)
+  
+  <a href=""> - Side View - </a>
+  ![alt-image](./Homework3/SetupImages/SideView.jpeg)
+  
+  ## Functionality demo
+  <p> You can find the demo <a href="">here</a>.
+    
+  ## Source code
+  <p> You can also find the source code <a href="https://github.com/AlinaGeo/IntroductionToRobotics/blob/main/Homework3/Homework3.ino">here</a>.
+  
+</details>
