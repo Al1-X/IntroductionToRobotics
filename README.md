@@ -109,3 +109,60 @@ https://youtu.be/PK2Td_nJlBc
   <p> You can also find the source code <a href="https://github.com/AlinaGeo/IntroductionToRobotics/blob/main/Homework3/Homework3.ino">here</a>.
   
 </details>
+
+<details>
+  <summary> <h2> Homework 4 </h2> </summary>
+
+  <h2> Task requirements </h2>
+  
+  <h3> Components </h3>
+  <ul>
+    <li> 4 digit 7-segment display </li>
+    <li> 1 joystick </li>
+    <li> 74hc595 shift register </li>
+    <li> Resistors </li>
+    <li> Wires </li>
+  </ul>
+
+  <h3> Description </h3>
+  <p> The goal of the forth homework was to create a setup with 4 digit 7-segment display. With the help of a joystick we can switch between the indivdual displays and change the digit(in hex) that each is showing. </p>
+  <p> The system has the following states (as written in the laboratory material) : <p>
+    <ol>
+      <li>
+        First state: you can use a joystick axis to cycle through the 4 digits;
+        using the other axis does nothing. A blinking decimal point shows
+        the current digit position. When pressing the button, you lock in on
+        the selected digit and enter the second state. 
+      </li>
+      <li>
+        Second state: in this state, the decimal point stays always on, no
+        longer blinking and you can no longer use the axis to cycle through
+        the 4 digits. Instead, using the other axis, you can increment on
+        decrement the number on the current digit IN HEX (aka from 0
+        to F, as in the lab). Pressing the button again returns you to the
+        previous state. Also, keep in mind that when changing the number,
+        you must increment it for each joystick movement - it should not
+        work continuosly increment if you keep the joystick in one position
+        (aka with joyMoved).
+      </li>
+      <li>
+        Reset: toggled by long pressing the button only in the first state.
+        When resetting, all the digits go back to 0 and the current position
+        is set to the first (rightmost) digit, in the first state.
+      </li>
+    </ol>
+  
+  ## Setup pictures
+  - Top View -
+  ![alt-image](./Homework4/SetupImages/TopView.jpeg)
+  
+  - TopSide View -
+  ![alt-image](./Homework4/SetupImages/TopSideView.jpeg)
+  
+  ## Functionality demo
+  <p> You can find the demo <a href="https://youtu.be/nIjO7VNzrbM">here</a>.
+    
+  ## Source code
+  <p> You can also find the source code <a href="https://github.com/AlinaGeo/IntroductionToRobotics/blob/main/Homework4/Homework4.ino">here</a>.
+  
+</details>
